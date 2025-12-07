@@ -1,0 +1,235 @@
+.buttons-container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 50px;
+    perspective: 1000px;
+}
+.buttons-container button 
+{
+    position: relative;
+    border: none;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+}
+.btn-3d-rotate 
+{
+    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+    color: white;
+    border-radius: 15px;
+    transform: translateZ(0);
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+}
+.btn-3d-rotate .btn-shadow 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff4757, #ff6b6b);
+    border-radius: 15px;
+    opacity: 0;
+    transition: all 0.4s ease;
+    transform: translateZ(-20px);
+}
+.btn-3d-rotate:hover 
+{
+    transform: rotateX(15deg) rotateY(15deg) translateZ(20px);
+    box-shadow: 
+        0 20px 40px rgba(255, 107, 107, 0.4),
+        0 0 0 3px #ff4757;
+}
+.btn-3d-rotate:active 
+{
+    transform: rotateX(-10deg) rotateY(-10deg) translateZ(-10px);
+}
+.btn-3d-rotate:hover .btn-shadow 
+{
+    opacity: 1;
+    transform: translateZ(-40px);
+}
+.btn-wave-click 
+{
+    background: linear-gradient(45deg, #4834d4, #686de0);
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(72, 52, 212, 0.3);
+}
+.btn-wave-click .wave 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease;
+}
+.btn-wave-click:active .wave 
+{
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+}
+.btn-wave-click:hover 
+{
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 
+        0 15px 30px rgba(72, 52, 212, 0.4),
+        0 0 0 3px #5f27cd;
+}
+.btn-wave-click:active 
+{
+    transform: translateY(2px) scale(0.98);
+}
+.btn-brick-out 
+{
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 
+        0 6px 0 #a93226,
+        0 10px 20px rgba(231, 76, 60, 0.3);
+    transform: translateZ(0);
+}
+.btn-brick-out .brick-pattern 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, transparent 95%, rgba(0,0,0,0.1) 95%),
+        linear-gradient(0deg, transparent 95%, rgba(0,0,0,0.1) 95%);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    border-radius: 8px;
+}
+.btn-brick-out:hover 
+{
+    transform: translateZ(30px) rotateX(5deg);
+    box-shadow: 
+        0 15px 30px rgba(231, 76, 60, 0.5),
+        0 0 0 3px #e74c3c,
+        inset 0 -2px 5px rgba(0,0,0,0.2);
+}
+.btn-brick-out:active 
+{
+    transform: translateZ(-10px) translateY(6px);
+    box-shadow: 
+        0 2px 5px rgba(231, 76, 60, 0.3),
+        0 0 0 3px #e74c3c;
+}
+.btn-neon-explosion 
+{
+    background: #000;
+    color: #0ff;
+    border: 2px solid #0ff;
+    border-radius: 10px;
+    box-shadow: 
+        0 0 10px #0ff,
+        inset 0 0 10px rgba(0, 255, 255, 0.1);
+    text-shadow: 0 0 5px #0ff;
+}
+.btn-neon-explosion .explosion 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #0ff 0%, transparent 70%);
+    opacity: 0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.btn-neon-explosion:hover 
+{
+    background: #0ff;
+    color: #000;
+    box-shadow: 
+        0 0 20px #0ff,
+        0 0 40px #0ff,
+        inset 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+.btn-neon-explosion:active .explosion 
+{
+    opacity: 0.6;
+    transform: scale(2);
+}
+.btn-depth-crack 
+{
+    background: linear-gradient(45deg, #2c3e50, #34495e);
+    color: #ecf0f1;
+    border-radius: 12px;
+    box-shadow: 
+        0 8px 0 #1a252f,
+        0 15px 20px rgba(0,0,0,0.4);
+    transform: translateZ(0);
+}
+.btn-depth-crack .crack 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 48%, rgba(255,255,255,0.1) 50%, transparent 52%);
+    background-size: 10px 10px;
+    opacity: 0;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+.btn-depth-crack:hover 
+{
+    transform: translateZ(40px) rotateY(10deg);
+    box-shadow: 
+        0 20px 40px rgba(0,0,0,0.6),
+        0 0 0 3px #3498db,
+        inset 0 -3px 0 rgba(0,0,0,0.2);
+}
+.btn-depth-crack:hover .crack 
+{
+    opacity: 1;
+    background-position: 5px 5px;
+    animation: crackMove 0.5s linear infinite;
+}
+.btn-depth-crack:active 
+{
+    transform: translateZ(-20px) translateY(8px);
+    box-shadow: 
+        0 5px 10px rgba(0,0,0,0.3),
+        0 0 0 3px #3498db;
+}
+@keyframes crackMove 
+{
+    0% { background-position: 0 0; }
+    100% { background-position: 10px 10px; }
+}
+@media screen and (orientation: portrait) 
+{
+    .buttons-container 
+    {
+        margin-top: 30vw !important;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+    .buttons-container button 
+    {
+        padding: 15px 30px;
+        font-size: 16px;
+        min-width: 200px;
+    }
+}

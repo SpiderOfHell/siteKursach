@@ -1,0 +1,220 @@
+.popup 
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35vw;
+    height: 80vh;
+    background: linear-gradient(73deg, #db7347 25%, #ece568 90%);
+    border: 1px solid #000;
+    z-index: 10000;
+    display: none;
+    color: black;
+    text-shadow: none;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    overflow: auto;
+    text-align: center;
+    font-family: monospace;
+}
+.popup-overlay 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9999;
+    display: none;
+    cursor: pointer;
+}
+.open-popup-btn
+{
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 22.5px;
+    padding: 0;
+    width: 100%;
+    font-family: inherit;
+    -webkit-text-stroke: 0.6px black;
+    text-shadow: none;
+}
+.butta
+{
+    color: red;
+    border: white solid 2px;
+    background-color: #3498db;
+    width: 10em;
+    height: 2em;
+}
+.butta:hover
+{
+    color: #540b8b;
+    cursor: pointer;
+}
+.butta:active
+{
+    color: #000;
+    border: black solid 2px;
+    background-color: #194b6c;
+}
+.body-no-scroll 
+{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.forum
+{
+    font-family: monospace;
+    max-width: 70%;
+    margin: 40px;
+    font-size: 25px;
+    -webkit-text-stroke: #000000 0.5px;
+    text-shadow: none;
+    display: grid;
+    grid-template-columns: 1fr 9fr auto;
+    grid-template-rows: auto auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+.forum_answ
+{
+    font-family: monospace;
+    max-width: 70%;
+    margin: 40px;
+    margin-left: 130px;
+    font-size: 25px;
+    -webkit-text-stroke: #000000 0.5px;
+    text-shadow: none;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: auto auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+.forum_vid
+{
+    font-family: monospace;
+    max-width: 70%;
+    margin: 40px;
+    margin-left: 130px;
+    text-shadow: none;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: auto auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+.ava
+{
+    grid-row: 1 / span 2;
+    display: block;
+    border: solid 2px rgb(202, 20, 132);
+    width: 110px;
+    float: inline-start;
+    margin: 15px;
+}
+.nick
+{
+    grid-row: 1;
+    height: fit-content;
+    width: fit-content;
+    margin: -3px;
+    margin-top: 4px;
+    border: solid 1px rgb(202, 20, 132);
+    background-color: rgb(179, 129, 1);
+}
+.msg 
+{
+    overflow-wrap: break-word;
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: -1.5em;
+    padding: 5px;
+    font-size: 0.9em;
+    font-family: monospace;
+    text-decoration: none;
+}
+.vid
+{
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: 10px;
+    text-align: center;
+}
+.forum::before, .forum_answ::before
+{
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 133px;
+    width: 2px;
+    background: linear-gradient(to bottom, 
+        transparent 0%, 
+        rgb(202, 20, 132) 20%, 
+        rgb(202, 20, 132) 80%, 
+        transparent 100%);
+}
+.forummsgnew
+{
+    width: 70vw;
+    min-height: 150px;
+    margin-top: 20px;
+    margin-left: 60px;
+    padding: 1em;
+    background-color: #000;
+}
+#writebutton
+{
+    color: red;
+    border: white solid 2px;
+    background-color: #3498db;
+    width: 10em;
+    height: 2em;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+#writebutton:hover
+{
+    color: #540b8b;
+    cursor: pointer;
+}
+#writebutton:active
+{
+    color: #000;
+    border: black solid 2px;
+    background-color: #194b6c;
+}
+#newmsg
+{
+    color: white;
+    -webkit-text-stroke: #000 0.015em;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    min-height: inherit;
+    min-width: 69vw;
+    font-size: 20px;
+    resize: none;
+    padding: 10px;
+    background: radial-gradient(circle,rgba(126, 143, 217, 1) 29%, rgba(95, 10, 138, 1) 100%);
+}
+#newmsg::placeholder
+{
+    font-size: 1.3em;
+    color: white;
+    -webkit-text-stroke: black 0.03em;
+}
+#newmsg:focus::placeholder
+{
+    color: red;
+}

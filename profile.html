@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imges/test1/1.jpeg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/prof.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/videvo.css">
+    <link rel="stylesheet" href="css/forum.css">
+    <link rel="stylesheet" href="css/mobstyle.css">
+    <link rel="stylesheet" href="css/popupglass.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <title>Профиль</title>
+</head>
+<body>
+    <!--Шапка-->
+    <header>
+        <nav class="navi">
+            <div class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="ssilki mobile-nav" id="mobileNav" type="none">
+                <li><a href="forum.html">Форум</a></li>
+                <li><a href="help.html">Помощь</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="index.html">Главная</a></li>
+            </ul>
+            <ul class="ssilki" type="none">
+                <li><a href="forum.html">Форум</a></li>
+                <li><a href="help.html">Помощь</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="index.html">Главная</a></li>
+            </ul>
+            <img src="imges/photo_2025-03-08_09-23-47.jpg" class="logo" title="Логотип" alt="Логотип">
+        </nav>
+    </header>
+    <div class="buttone">
+        <div class="notification-bell">
+            <div class="bell-icon">🔔</div>
+            <div class="notification-count">3</div>
+            <div class="notification-dropdown">
+                <div class="notification-item">Новое сообщение</div>
+                <div class="notification-item">Новый комментарий</div>
+                <div class="notification-item">Денег дай</div>
+            </div>
+        </div>  
+    </div>
+    <div class="video-container">
+        <div class="video-wrapper">
+            <video class="video" muted loop>
+                <source src="imges/amogus.mp4" type="video/mp4">
+            </video>
+            <div class="video-caption">
+            <h3 style="font-family: monospace;">Подробная инструкция по регистрации:</h3>
+            <ul style="font-family: monospace;  list-style: none; padding-left: 1em; font-size: 1.4em;">
+                <li>Нажимаем кнопку: "Зарегистрироваться".</li>
+                <li>Корректно заполняем все поля.</li>
+                <li>Нажимаем кнопку "Продать душу".</li>
+                <li>В течение 10000 рабочих дней администрация сайта направит повестку для завершения регистрации при помощи голубиной почты.</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="buttons-container">
+        <button class="btn-3d-rotate">
+            <span class="btn-text">Ктоя</span>
+            <span class="btn-shadow"></span>
+        </button>
+        <button class="btn-wave-click popup-opener">
+            <span class="wave"></span>
+            <span class="btn-text">"Зарегистрироваться".</span>
+        </button>
+        <button class="btn-brick-out">
+            <span class="brick-text">Зарегистрироваться.</span>
+            <div class="brick-pattern"></div>
+        </button>
+        <button class="btn-neon-explosion">
+            <span class="explosion-text">Зарегаться</span>
+            <div class="explosion"></div>
+        </button>
+        <button class="btn-depth-crack btn-wave-click1 popup-opener1">
+            <span class="crack-text">"Зарегистрироваться".</span>
+            <div class="crack"></div>
+        </button>
+    </div>
+    <div style="text-align: center; font-size: 2em; -webkit-text-stroke: black 0.1px;">
+        <h1>Причины для регистрации:</h1>
+    </div>
+    <div class="cards-container">
+        <!-- Карточка 1 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="imges/map.png" alt="Карточка 1">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Другой картинки не нашёл</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauritius?</p>
+                <button class="card-btn">Подробнее</button>
+            </div>
+        </div>
+        <!-- Карточка 2 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="imges/anuskita-ezgif.com-video-to-gif-converter.gif" alt="Карточка 2">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Акуло</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauritius?</p>
+                <button class="card-btn">Подробнее</button>
+            </div>
+        </div>
+        <!-- Карточка 3 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="imges/photo_2024-10-15_22-02-23.jpg" alt="Карточка 3">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Красивая же картинка</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauritius?</p>
+                <button class="card-btn">Подробнее</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay" id="messagePopupOverlay" onclick="closeMessagePopup()"></div>
+    <div class="popup" id="messagePopup">
+        <h3 style="color: white; -webkit-text-stroke: 0.7px black; font-size: 2.3em; margin-top: -0.31em; margin-bottom: 0.5em;">Необходимо зарегистрироваться!</h3>
+        <div style="color: white; -webkit-text-stroke: 0.6px black; font-size: 2em; text-align: left ;">
+            <form method="post" action="javascript:void(0)" onsubmit="alert('Регистрация провалена успешно, спасибо за душу!')">
+                <label>Телефона номер впишите <br><input type="tel" placeholder="+78005553535" required pattern="^[\+\d\(\)\-\s]+$"></label><br>
+                <label>Емейл <br><input type="email" placeholder="mail@kit.com" required><br></label>
+                <label>Пароль придумойте <br><input type="password" name="pass" id="pass" placeholder="Не используйте qwerty" required minlength="3" pattern="^\S+$" maxlength="20"></label><br>
+                <label>Докажи что не робот, указав время и дату<input type="datetime-local" name="robo" id="robo" required></label> <br>
+                <label>Приложите смешное фото с котятами<br><input type="file" name="ind" id="ind" required><br></label>
+                <label><input type="checkbox" name="smm" id="smm" required checked onclick="setTimeout(() => this.checked = true, 100)">Продписаться на все мыслимые и немыслимые рассылки</label><br>  
+                <label><input type="checkbox" name="sell" id="sell" required checked onclick="setTimeout(() => this.checked = true, 100)">Я согласен(-на) отдать свою душу в бессрочное владение автору данного сайта</label>
+                <input type="submit" name="subm" id="reg" class="butta" value="Продать душу">
+                <input type="reset" name="res" id="res" class="butta" value="Сбросить данные">
+            </form>
+        </div>
+        <div style="margin-top: -7px;">
+            <button id="liv" style="position: relative; bottom: 0; cursor: pointer;" onclick="closeMessagePopup()">Стать тряпкой и остаться без аккаунта</button>
+        </div>
+    </div>
+    <div class="popup-overlay1" id="messagePopupOverlay1" onclick="closeMessagePopup1()"></div>
+<div class="popup1" id="messagePopup1">
+    <div class="popup-background1">
+        <!-- Анимированные квадраты -->
+        <div class="floating-square1 sq-11"></div>
+        <div class="floating-square1 sq-21"></div>
+        <div class="floating-square1 sq-31"></div>
+        <div class="floating-square1 sq-41"></div>
+        <div class="floating-square1 sq-51"></div>
+    </div>
+    <div class="popup-content1">
+        <h3 class="popup-title1">Необходимо зарегистрироваться!</h3>
+        <form class="popup-form1" method="post" action="javascript:void(0)" onsubmit="alert('Регистрация провалена успешно, спасибо за душу!')">
+            <label>Телефона номер впишите <br><input type="tel" placeholder="+78005553535" required pattern="^[\+\d\(\)\-\s]+$"></label>
+            <label>Емейл <br><input type="email" placeholder="mail@kit.com" required></label>
+            <label>Пароль придумойте <br><input type="password" name="pass1" id="pass1" placeholder="Не используйте qwerty" required minlength="3" pattern="^\S+$" maxlength="20"></label>
+            <label>Докажи что не робот, указав время и дату<input type="datetime-local" name="robo1" id="robo1" required></label>
+            <label>Приложите смешное фото с котятами<br><input type="file" name="ind1" id="ind1" required></label>
+            <label class="checkbox-label1"><input type="checkbox" name="smm1" id="smm1" required checked onclick="setTimeout(() => this.checked = true, 100)">Подписаться на все рассылки</label>
+            <label class="checkbox-label1"><input type="checkbox" name="sell1" id="sell1" required checked onclick="setTimeout(() => this.checked = true, 100)">Я согласен(-на) отдать свою душу</label>
+            
+            <div class="form-buttons1">
+                <input type="submit" name="subm1" id="reg1" class="butta1" value="Продать душу">
+                <input type="reset" name="res1" id="res1" class="butta1" value="Сбросить данные">
+            </div>
+        </form>
+        
+        <button class="close-btn1" onclick="closeMessagePopup1()">Стать тряпкой и остаться без аккаунта</button>
+    </div>
+</div>
+    <footer>
+        <div class="footer-cont">
+            <address>
+                <p>По всем вопросам звонить <a href="tel:000000">сюда</a></p>
+                <p>По всем вопросам писать <a href="mailto:domodedovo228@gmail.com">сюда</a></p>
+                <div class="task2-socials">
+                    <a class="social-btn" href="https://www.vk.com/">VK</a>
+                    <a class="social-btn" href="https://www.youtube.com/">YouTube</a>
+                    <a class="social-btn" href="https://www.telegram.org/">Telegram</a>
+                </div>
+            </address>   
+        </div>
+    </footer>
+    <script src="js/favicon.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/videvo.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/popupglass.js"></script>
+</body>
+</html>

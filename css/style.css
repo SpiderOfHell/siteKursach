@@ -1,0 +1,343 @@
+:root 
+{
+    --btn-bg: #222;
+    --grad: linear-gradient(180deg, #ff00cc, #3333ff);
+}
+.navi 
+{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: -15px;
+    margin-bottom: -25px;
+    margin-right: -20px;
+}
+.ssilki 
+{
+    font-size: 2.9vw;
+    display: flex;
+    list-style: none;
+    gap: 10vw;
+    margin: 30px;
+    padding: 20px;
+}
+.ssilki a
+{
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+}
+.logo
+{
+    display: block;
+    margin-right: 120px;
+    border: solid 2px greenyellow;
+    width: 110px;
+}
+.pre1
+{
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 2px 2px 0 black;
+    text-align: center;
+}
+header 
+{
+    z-index: 1000;
+    background: linear-gradient(135deg, #540b8b 10%, #3498db 90%);
+    position: sticky;
+    top: 0;
+    width: calc(100% + 60px);
+    margin-top: -30px;
+    margin-left: -30px;
+    height: 150px;
+    max-width: 1;
+    border-radius: 0 0 30px 30px;
+}
+body
+{
+    background-image: url('../imges/photo_2025-09-02_14-25-53 копия.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #f0f0f0;
+    background-attachment: fixed;
+    margin: 30px;
+    background-position: center;
+    padding: 0px;
+    min-height: 100vh;
+    font-family: 'Edo SZ HQ', Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: inherit;
+    color: white;
+    text-shadow: 2px 2px 0 black;
+}
+footer
+{
+    bottom: 0;
+    background: linear-gradient(135deg, #194b6c 40%, #000000 60%);
+    position: relative;
+    width: calc(100% + 60px);
+    margin-bottom: -120px;
+    margin-left: -30px;
+    height: 150px;
+    max-width: 1;
+    border-radius: 0;
+    z-index: 1000;
+}
+main
+{
+    min-height: 100vh;
+}
+aside
+{
+    font-size: 20px;
+    display: flex;
+}
+.spis2
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: -15px;
+    margin-bottom: -25px;
+    margin-right: 20px;
+    font-size: 25px;
+}
+.spis1
+{
+    font-size: 20px;
+}
+a:hover
+{
+    cursor: pointer;
+    outline: dashed black;
+}
+.spis2 li 
+{
+    margin-bottom: 45px;
+}
+.spis1 li 
+{
+    margin-bottom: 10px;
+}
+.ssilki a:active 
+{
+    color: red !important;
+    transform: scale(0.95);
+}
+.ssilki a:visited 
+{
+    color: whitesmoke;
+}
+a:visited 
+{
+    color: white;
+}
+.spis2 > ol 
+{
+    padding-left: 40px;
+}
+.spis2 + pre 
+{
+    margin-top: 30px;
+    padding: 15px;
+}
+h3 ~ ol 
+{
+    margin-top: 50px;
+}
+.rubik-mono-one-regular
+{
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.colonka
+{
+    font-family: sans-serif;
+    text-shadow: 1px 1px 0 black;
+    font-size: 19px;
+    text-indent: 20px;
+}
+.shadow1
+{
+    text-shadow: 1px 1px 0 black;
+}
+.zag1
+{
+    color: greenyellow; 
+    text-align: center;
+    text-shadow: 2px 2px 0 blue, 
+    -2px -2px 0 blue, 
+     2px -2px 0 blue, 
+    -2px 2px 0 blue;
+}
+.sideblock
+{
+    position: fixed;
+    right: 0;
+    background: linear-gradient(140deg, #3498db 25%, #000000 90%);
+    height: 70vh;
+    padding-bottom: 30vh;
+    margin-top: -28px;
+    padding-top: 30px;
+    width: 14vw;
+    z-index: 100;
+    padding-left: 1.5vw;
+    padding-right: 1vw;
+    overflow-wrap: break-word;
+    text-align: center;
+    -webkit-text-stroke: #000000 0.2px;
+    text-shadow: none;
+    font-size: 22.5px;
+}
+.sideblock p 
+{
+    text-align: left;
+    margin-bottom: 13vh;    
+    padding-left: 30px;
+}
+.sideblock:first-child p
+{
+    margin-top: 40px;
+}
+form
+{
+    padding-left: 30px;
+    font-family: monospace;
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke: #000 0.4px;
+}
+input::placeholder
+{
+    -webkit-text-stroke: 0px;
+}
+input
+{
+    margin-bottom: 20px;
+}
+.btn
+{
+    border: red solid 2px;
+    background-color: #db7347;
+    font-size: 1.8em;
+}
+#text:focus::placeholder
+{
+    color: red;
+}
+#essay::placeholder
+{
+    color: red;
+}
+#essay:focus::placeholder
+{
+    color: green;
+}
+legend
+{
+    font-size: 2em;
+    font-family: 'Edo SZ HQ';
+}
+fieldset
+{
+    border-color: black;
+}
+input:focus::placeholder
+{
+    color: green;
+}
+.burger-menu 
+{
+    display: none;
+}
+.mobile-aside 
+{
+    display: none;
+}
+.nav-overlay 
+{
+    display: none;
+}
+.ssilki mobile-nav
+{
+    display: none;
+}
+.mobile-nav 
+{
+    display: none;
+}
+.gallery-container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-container img
+{
+    flex: 1 1 calc(33% - 10px);
+    max-width: calc(33% - 10px);
+    height: auto;
+    object-fit: fill;
+}
+#deletedmsg
+{
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1.3em;
+    margin-left: -0.1em;
+}
+.task2-socials 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+.social-btn 
+{
+    position: relative;
+    padding: 1rem 2rem;
+    color: white;
+    background: var(--btn-bg);
+    border-radius: 1em;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 1.3s;
+    z-index: 1;
+}
+.task2-socials a
+{
+    flex: 1 1 20%;
+    max-width: fit-content;
+}
+.social-btn::before 
+{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--grad);
+    transform: translateY(-100%);
+    transition: 0.4s;
+    z-index: -1;
+}
+.social-btn:hover::before 
+{
+    transform: translateY(0);
+}
+.social-btn:hover 
+{
+    color: red;
+    cursor: pointer;
+}
+.footer-cont
+{
+    color: azure;
+    text-align: center
+}
