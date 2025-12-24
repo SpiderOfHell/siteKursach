@@ -47,7 +47,7 @@
             <div class="notification-dropdown">
                 <div class="notification-item">Новое сообщение</div>
                 <div class="notification-item">Новый комментарий</div>
-                <div class="notification-item">Денег дай</div>
+                <div class="notification-item">Новый год</div>
             </div>
         </div>  
     </div>
@@ -61,8 +61,8 @@
             <ul style="font-family: monospace;  list-style: none; padding-left: 1em; font-size: 1.4em;">
                 <li>Нажимаем кнопку: "Зарегистрироваться".</li>
                 <li>Корректно заполняем все поля.</li>
-                <li>Нажимаем кнопку "Продать душу".</li>
-                <li>В течение 10000 рабочих дней администрация сайта направит повестку для завершения регистрации при помощи голубиной почты.</li>
+                <li>Нажимаем кнопку Зарегистрироваться</li>
+                <li>В течение 100 рабочих дней администрация сайта направит повестку для завершения регистрации при помощи голубиной почты.</li>
             </ul>
             </div>
         </div>
@@ -99,8 +99,8 @@
                 <img src="imges/map.png" alt="Карточка 1">
             </div>
             <div class="card-content">
-                <h3 class="card-title">Другой картинки не нашёл</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauritius?</p>
+                <h3 class="card-title">Расслыка новостей</h3>
+                <p class="card-text">Ни одна новая игровая приставка не убежит от нас</p>
                 <button class="card-btn">Подробнее</button>
             </div>
         </div>
@@ -110,8 +110,8 @@
                 <img src="imges/anuskita-ezgif.com-video-to-gif-converter.gif" alt="Карточка 2">
             </div>
             <div class="card-content">
-                <h3 class="card-title">Акуло</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauritius?</p>
+                <h3 class="card-title">Молодёжный дизайн</h3>
+                <p class="card-text">Настолько привлекательный, что хочется заходить ещё и ещё</p>
                 <button class="card-btn">Подробнее</button>
             </div>
         </div>
@@ -121,8 +121,8 @@
                 <img src="imges/photo_2024-10-15_22-02-23.jpg" alt="Карточка 3">
             </div>
             <div class="card-content">
-                <h3 class="card-title">Красивая же картинка</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauritius?</p>
+                <h3 class="card-title">Наш. Отечественный.</h3>
+                <p class="card-text">Ресурс на 100% создан отечественными программистими.</p>
                 <button class="card-btn">Подробнее</button>
             </div>
         </div>
@@ -131,20 +131,20 @@
     <div class="popup" id="messagePopup">
         <h3 style="color: white; -webkit-text-stroke: 0.7px black; font-size: 2.3em; margin-top: -0.31em; margin-bottom: 0.5em;">Необходимо зарегистрироваться!</h3>
         <div style="color: white; -webkit-text-stroke: 0.6px black; font-size: 2em; text-align: left ;">
-            <form method="post" action="javascript:void(0)" onsubmit="alert('Регистрация провалена успешно, спасибо за душу!')">
+            <form method="post" action="javascript:void(0)" onsubmit="alert('Регистрация прошла успешно!')">
                 <label>Телефона номер впишите <br><input type="tel" placeholder="+78005553535" required pattern="^[\+\d\(\)\-\s]+$"></label><br>
                 <label>Емейл <br><input type="email" placeholder="mail@kit.com" required><br></label>
                 <label>Пароль придумойте <br><input type="password" name="pass" id="pass" placeholder="Не используйте qwerty" required minlength="3" pattern="^\S+$" maxlength="20"></label><br>
                 <label>Докажи что не робот, указав время и дату<input type="datetime-local" name="robo" id="robo" required></label> <br>
                 <label>Приложите смешное фото с котятами<br><input type="file" name="ind" id="ind" required><br></label>
-                <label><input type="checkbox" name="smm" id="smm" required checked onclick="setTimeout(() => this.checked = true, 100)">Продписаться на все мыслимые и немыслимые рассылки</label><br>  
-                <label><input type="checkbox" name="sell" id="sell" required checked onclick="setTimeout(() => this.checked = true, 100)">Я согласен(-на) отдать свою душу в бессрочное владение автору данного сайта</label>
-                <input type="submit" name="subm" id="reg" class="butta" value="Продать душу">
+                <label><input type="checkbox" name="smm" id="smm" required checked onclick="setTimeout(() => this.checked = true, 100)">Подписаться на все рассылки</label><br>
+                <label><input type="checkbox" name="sell" id="sell" required checked onclick="setTimeout(() => this.checked = true, 100)">Даже на рассылки по факсу</label><br>
+                <input type="submit" name="subm" id="reg" class="butta" value="Зарегистрироваться">
                 <input type="reset" name="res" id="res" class="butta" value="Сбросить данные">
             </form>
         </div>
         <div style="margin-top: -7px;">
-            <button id="liv" style="position: relative; bottom: 0; cursor: pointer;" onclick="closeMessagePopup()">Стать тряпкой и остаться без аккаунта</button>
+            <button id="liv" style="position: relative; bottom: 0; cursor: pointer;" onclick="closeMessagePopup()">Прекратить регистрацию</button>
         </div>
     </div>
     <div class="popup-overlay1" id="messagePopupOverlay1" onclick="closeMessagePopup1()"></div>
@@ -159,22 +159,22 @@
     </div>
     <div class="popup-content1">
         <h3 class="popup-title1">Необходимо зарегистрироваться!</h3>
-        <form class="popup-form1" method="post" action="javascript:void(0)" onsubmit="alert('Регистрация провалена успешно, спасибо за душу!')">
+        <form class="popup-form1" method="post" action="javascript:void(0)" onsubmit="alert('Регистрация прошла успешно!')">
             <label>Телефона номер впишите <br><input type="tel" placeholder="+78005553535" required pattern="^[\+\d\(\)\-\s]+$"></label>
             <label>Емейл <br><input type="email" placeholder="mail@kit.com" required></label>
             <label>Пароль придумойте <br><input type="password" name="pass1" id="pass1" placeholder="Не используйте qwerty" required minlength="3" pattern="^\S+$" maxlength="20"></label>
             <label>Докажи что не робот, указав время и дату<input type="datetime-local" name="robo1" id="robo1" required></label>
             <label>Приложите смешное фото с котятами<br><input type="file" name="ind1" id="ind1" required></label>
             <label class="checkbox-label1"><input type="checkbox" name="smm1" id="smm1" required checked onclick="setTimeout(() => this.checked = true, 100)">Подписаться на все рассылки</label>
-            <label class="checkbox-label1"><input type="checkbox" name="sell1" id="sell1" required checked onclick="setTimeout(() => this.checked = true, 100)">Я согласен(-на) отдать свою душу</label>
+            <label class="checkbox-label1"><input type="checkbox" name="sell1" id="sell1" required checked onclick="setTimeout(() => this.checked = true, 100)">Даже на рассылки по факсу</label>
             
             <div class="form-buttons1">
-                <input type="submit" name="subm1" id="reg1" class="butta1" value="Продать душу">
+                <input type="submit" name="subm1" id="reg1" class="butta1" value="Зарегистрироваться">
                 <input type="reset" name="res1" id="res1" class="butta1" value="Сбросить данные">
             </div>
         </form>
         
-        <button class="close-btn1" onclick="closeMessagePopup1()">Стать тряпкой и остаться без аккаунта</button>
+        <button class="close-btn1" onclick="closeMessagePopup1()">Прекратить регистрацию</button>
     </div>
 </div>
     <footer>

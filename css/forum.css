@@ -49,7 +49,7 @@
     color: red;
     border: white solid 2px;
     background-color: #3498db;
-    width: 10em;
+    width: fit-content;
     height: 2em;
 }
 .butta:hover

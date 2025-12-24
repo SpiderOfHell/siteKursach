@@ -1,5 +1,5 @@
 let counter = 1;
-const favicimg = 288;
+const favicimg = 60;
 let favicons = document.querySelectorAll('link');
 function animka() 
 {
