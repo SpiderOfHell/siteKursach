@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="ch***PT & D**pS**k & h****com & отч*сляюсь з*втра"">
     <title>Форум</title>
     <!--Фавиконка: начало-->
     <link rel="icon" href="imges/test1/1.jpeg">
@@ -40,30 +39,17 @@
         <div class="sideblock">
             <h3>Горячие разделы</h3>
             <div style="margin-left: -0.5vw; -webkit-text-stroke: 0.6px black;" >
-                <p class="open-popup-btn">опросник</p>
+                <p class="open-popup-btn">Опросник</p>
                 <p>Нинтендо</p>
                 <p style="font-size: 0.95em;">Евпантий Якудзов</p>
                 <p style="text-align: center; padding: 0; margin-top: -80px;">
-                    <img src="imges/2W4RydSxGsIUTX7ar88fxa3jub_jsutG66LsoQ4BTh1kFjrQrToXaoyzhWwpH543Ej94_TlIx-ZoR1pBpKw2LHkh.jpg" alt="Плейсхолдер нового поколеня" title="Плейсхолдер нового поколеня" width="150px" style="border: solid 2px pink;">
+                    <img src="imges/2W4RydSxGsIUTX7ar88fxa3jub_jsutG66LsoQ4BTh1kFjrQrToXaoyzhWwpH543Ej94_TlIx-ZoR1pBpKw2LHkh.jpg" alt="Плейсхолдер нового поколения" title="Плейсхолдер нового поколения" width="150px" style="border: solid 2px pink;">
                 </p>
             </div>
         </div>
     </aside>
-    <aside class="mobile-aside" id="mobileAside">
-    <div class="sideblock">
-        <h3>Горячие разделы</h3>
-        <div style="margin-left: -0.5vw; -webkit-text-stroke: 0.6px black;">
-            <p class="open-popup-btn">опросник чадов</p>
-            <p>Нинтендобои</p>
-            <p style="font-size: 0.95em;">Евпантий Якудзов</p>
-            <p style="text-align: center; padding: 0; margin-top: -65px;">
-                <img src="imges/2W4RydSxGsIUTX7ar88fxa3jub_jsutG66LsoQ4BTh1kFjrQrToXaoyzhWwpH543Ej94_TlIx-ZoR1pBpKw2LHkh.jpg" alt="Плейсхолдер нового поколеня" title="Плейсхолдер нового поколеня" width="150px" style="border: solid 2px pink;">
-            </p>
-        </div>
-    </div>
-</aside>
     <main>
-        <!--Написать сообщене на форуме-->
+        <!--Написать сообщение на форуме-->
         <div class="forummsgnew">
             <textarea name="msgnew" id="newmsg" placeholder="Введите текст..." maxlength="512"></textarea>
             <button id="writebutton">отправить</button>
@@ -75,14 +61,14 @@
                     <span class="nick">
                         EgorMasterHerobrine2011
                     </span>
-                    <span class="msg">НЕНАВИЖУ СУПЕРМАРИВО И НИНТЕНДО СЕГА ТОП</span>
+                    <span class="msg">Я считаю, что современные игровые приставки крайне интересны.</span>
             </div>
             <div class="forum_answ">
                 <img class="ava" src="imges/2W4RydSxGsIUTX7ar88fxa3jub_jsutG66LsoQ4BTh1kFjrQrToXaoyzhWwpH543Ej94_TlIx-ZoR1pBpKw2LHkh.jpg" alt="fefed">
                     <span class="nick">
                         Xx_Evpantiy Yakuzov_xX
                     </span>
-                    <span class="msg">Терпи.</span>
+                    <span class="msg">Согласен.</span>
             </div>
         </div>
         <!--Второй блок форума-->
@@ -127,8 +113,8 @@
             <label for="Tbh" style="color: white; -webkit-text-stroke: 0.7px black; font-size: 1.2em;">Какая главная игра всех времён и народов<br></label>
             <input type="text" name="Tbh" id="text" placeholder="Пишите честно" style="width: 12rem;" required spellcheck="false">
                 <div style="width: inherit;">
-                    <label>Напишите эссе минимум на 1000 символов о том, почему эта игра самая лучшая<br>
-                        <textarea spellcheck="true" cols="50", rows="10" required minlength="1000" name="game essay" id="essay" placeholder="Не забывайте: ваш ай-пи адресс нам виден." style="width: 100%; margin-left: -1em; min-height: 4.5em; padding: 0.3em;"></textarea>
+                    <label>Напишите эссе, почему эта игра самая лучшая<br>
+                        <textarea spellcheck="true" cols="50", rows="10" required minlength="10" name="game essay" id="essay" placeholder="Так-то так-то, то-то то-то" style="width: 100%; margin-left: -1em; min-height: 4.5em; padding: 0.3em;"></textarea>
                     </label>
                 </div>
                 <fieldset>
@@ -162,6 +148,7 @@
                                     <option value="e">Sega Master System</option>
                                     <option value="f">Nintendo Switch 2</option>
                                     <option value="g">Wii U</option>
+                                    <option value="h">Xbox360</option>
                                 </select>
                             </label>
                         </div>
@@ -182,9 +169,9 @@
             <form method="post" action="javascript:void(0)" onsubmit="alert('Регистрация прошла успешно!')">
                 <label>Телефона номер впишите <br><input type="tel" placeholder="+78005553535" required pattern="^[\+\d\(\)\-\s]+$"></label><br>
                 <label>Емейл <br><input type="email" placeholder="mail@kit.com" required><br></label>
-                <label>Пароль придумойте <br><input type="password" name="pass" id="pass" placeholder="Не используйте qwerty" required minlength="3" pattern="^\S+$" maxlength="20"></label><br>
+                <label>Пароль придумайте <br><input type="password" name="pass" id="pass" placeholder="Не используйте qwerty" required minlength="3" pattern="^\S+$" maxlength="20"></label><br>
                 <label>Докажи что не робот, указав время и дату<input type="datetime-local" name="robo" id="robo" required></label> <br>
-                <label>Приложите смешное фото с котятами<br><input type="file" name="ind" id="ind" required><br></label>
+                <label>Приложите файл для аватарки<br><input type="file" name="ind" id="ind" required><br></label>
                 <label><input type="checkbox" name="smm" id="smm" required checked onclick="setTimeout(() => this.checked = true, 100)">Подписаться на все рассылки</label><br>
                 <label><input type="checkbox" name="sell" id="sell" required checked onclick="setTimeout(() => this.checked = true, 100)">Даже на рассылки по факсу</label><br>
                 <input type="submit" name="subm" id="reg" class="butta" value="Зарегистрироваться">
